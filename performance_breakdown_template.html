@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<body>
+<h1>Strategy Performance Breakdown</h1>
+<div class="container">
+	<div id="graph_perf" style="float: left; width: 50%">
+	<img src= "{{ yoy_graph }}" alt="Strategy Performance Graph" style="width: 95%"><br>
+	<img src= "{{ mom_compare }}" alt="Strategy Performance Graph" style="width: 95%"><br>
+	</div>
+	<div id="summary_perf" style="margin-left: 50%">
+		<h2><br><br>Month-on-Month Analysis</h2>
+		{{ perf_table }} 
+		<h2><br></h2>
+		{{ benchmark_reg }} 
+	</div>
+</div>
+</body>
+</html>
